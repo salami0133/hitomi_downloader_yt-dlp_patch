@@ -11,9 +11,10 @@ if constants.curlang == 'ko':
 
 import ytdl
 
-constants.URL_PYPI="https://raw.githubusercontent.com/depth221/yt-dlp-default-ejs-github/refs/heads/main/yt-dlp.html" 
+constants.URL_PYPI="https://raw.githubusercontent.com/salami0133/yt-dlp-default-ejs-test/refs/heads/main/yt-dlp.html" 
 ytdl.CUR_MODULE_NAME="123" # for force-reinstalling yt-dlp
 try:
     ytdl.get_ytdl("yt_dlp", constants.URL_PYPI) # download and install patched yt-dlp
 except Exception as e:
+
     messageBox(f'{error_msg}: {e}')
